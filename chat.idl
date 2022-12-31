@@ -1,0 +1,21 @@
+
+module Chat {
+
+    const long k_STR_LEN_USER       = 128;
+    const long k_STR_LEN_PAYLOAD    = 512;
+
+    struct User {
+        @key string<k_STR_LEN_USER> username;
+        string<k_STR_LEN_USER> group;
+        string<k_STR_LEN_USER> first_name;
+        string<k_STR_LEN_USER> last_name;
+    };
+
+    struct Message {
+        @key string<k_STR_LEN_USER> from_user;
+        @key string<k_STR_LEN_USER> to_user;
+        @key string<k_STR_LEN_USER> to_group;
+        string<k_STR_LEN_PAYLOAD> payload;                
+    };
+
+};
