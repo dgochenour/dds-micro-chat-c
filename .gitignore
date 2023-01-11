@@ -1,4 +1,5 @@
 **/build
+**/objs
 **/generated
 **/xml_types
 
