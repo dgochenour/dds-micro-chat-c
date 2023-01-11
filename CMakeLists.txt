@@ -34,14 +34,14 @@ else()
 endif()
 
 set(IDL_GEN_C
-    ${CMAKE_CURRENT_SOURCE_DIR}/chat.${SOURCE_EXTENSION_C}
-    ${CMAKE_CURRENT_SOURCE_DIR}/chatPlugin.${SOURCE_EXTENSION_C}
-    ${CMAKE_CURRENT_SOURCE_DIR}/chatSupport.${SOURCE_EXTENSION_C}
+    ${CMAKE_CURRENT_SOURCE_DIR}/generated/chat.${SOURCE_EXTENSION_C}
+    ${CMAKE_CURRENT_SOURCE_DIR}/generated/chatPlugin.${SOURCE_EXTENSION_C}
+    ${CMAKE_CURRENT_SOURCE_DIR}/generated/chatSupport.${SOURCE_EXTENSION_C}
 )
 set(IDL_GEN_H
-    ${CMAKE_CURRENT_SOURCE_DIR}/chat.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/chatPlugin.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/chatSupport.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/generated/chat.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/generated/chatPlugin.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/generated/chatSupport.h
 )
 
 set(MICRO_C_LIBS 
@@ -59,7 +59,7 @@ include_directories(
 link_directories($ENV{RTIMEHOME}/lib/${RTIME_TARGET_NAME})
 
 ################################################################################
-# example_subscriber_1
+# chat_client
 ################################################################################
 add_executable(chat_client 
     ${CMAKE_CURRENT_SOURCE_DIR}/chat_client.${SOURCE_EXTENSION_C}
