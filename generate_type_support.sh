@@ -1,8 +1,8 @@
 #!/bin/bash
 
-IDL_DIR="./idl"
+IDL_DIR="./idl_types"
 GEN_DIR="./generated"
-GEN_XML_DIR="./xmltypes"
+GEN_XML_DIR="./xml_types"
 
 FILES="$IDL_DIR/*.idl"
 for f in $FILES
