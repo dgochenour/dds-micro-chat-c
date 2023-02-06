@@ -1,5 +1,5 @@
 # dds-micro-chat-c
-A simple "chat app" using the C API provided by Connext Micro 2.4.x 
+A simple "chat app" using the C API provided by Connext Micro 2.4.14. Further, the Micro source is build with `-DRTIME_CERT=1` to approximate a Connext Cert release, sure as *RTI Connext Cert 2.4.12.1*.
 
 
 Assuming RTIMEHOME is set...
