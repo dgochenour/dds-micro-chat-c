@@ -1,6 +1,11 @@
 # dds-micro-chat-c
 A simple "chat app" using the C API provided by Connext Micro 2.4.14. Further, the Micro source is build with `-DRTIME_CERT=1` to approximate a Connext Cert release, such as *RTI Connext Cert 2.4.12.1*.
 
+## Challenges of implementing a "chat app" using Connext Cert
+1) DPSE only
+2) No filtering abstractions
+3) All potential peers must be know at startup
+
 ## Building and running this example
 
 ### 1) Set the enviroment variables
