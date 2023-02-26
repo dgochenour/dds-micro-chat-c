@@ -1,6 +1,9 @@
 
 module Chat {
 
+    const string k_USER_TOPIC_NAME      = "User Info Topic";
+    const string k_MESSAGE_TOPIC_NAME   = "Message Topic";
+
     const long k_STR_LEN_USER       = 128;
     const long k_STR_LEN_PAYLOAD    = 512;
 
